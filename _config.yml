@@ -1,0 +1,28 @@
+title: Romke's Notes on the Tao Te Ching
+description: >
+  I have been contemplating the Tao Te Ching — that ancient Chinese book of
+  wisdom — ever since I first read it over a decade ago. My notes and thoughts
+  on these texts are collected here, largely for my own benefit but free for
+  anyone to use.
+baseurl: ""
+url: "http://tao-te-ching.romkevandermeulen.nl"
+twitter_username: RomkeVdMeulen
+github_username:  RomkeVdMeulen
+
+collections:
+  chapters:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: page
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock

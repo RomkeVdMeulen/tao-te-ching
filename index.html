@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="home">
+
+	<ul class="post-list">
+		<li>
+			<article>
+				<header class="post-header">
+					<h2>
+						About this website
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					I have been contemplating the <a href="https://en.wikipedia.org/wiki/Tao_Te_Ching">Tao Te Ching</a>
+					— that ancient Chinese book of wisdom — ever since I first read it
+					over a decade ago. My notes and thoughts on these texts are collected
+					here, largely for my own benefit but
+					<a href="http://creativecommons.org/publicdomain/zero/1.0/">free for anyone to use</a>.
+				</div>
+			</article>
+		</li>
+
+		{% for chapter in site.chapters %}
+		<li>
+			<article>
+				<header class="post-header">
+					<h2>
+						<a class="post-link" href="{{ chapter.url | prepend:site.baseurl }}">{{ chapter.title }}</a>
+					</h2>
+					<div>
+						<span>{{ chapter.quote }}</span>
+					</div>
+				</header>
+
+				<div class="entry-content">
+					{{ chapter.description }}
+				</div>
+			</article>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

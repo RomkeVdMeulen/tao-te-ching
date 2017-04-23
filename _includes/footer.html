@@ -1,0 +1,33 @@
+<footer class="site-footer">
+
+	<div class="wrapper">
+		<div class="footer-col-wrapper">
+			<div class="footer-col footer-col-1">
+				<ul class="social-media-list">
+					{% if site.github_username %}
+					<li>
+						{% include icon-github.html username=site.github_username %}
+					</li>
+					{% endif %}
+
+					{% if site.twitter_username %}
+					<li>
+						{% include icon-twitter.html username=site.twitter_username %}
+					</li>
+					{% endif %}
+				</ul>
+			</div>
+
+			<div class="footer-col footer-col-2">
+				<p>
+					These notes are published under Creative Commons Zero.
+					<br>
+					<a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">
+				    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0" />
+				  </a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+</footer>
