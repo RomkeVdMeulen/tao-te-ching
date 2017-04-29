@@ -14,8 +14,9 @@ These are the translations that I've got on my own bookshelf:
   *ten thousand things* instead of the more common *myriad things*.
 * Derek Lin concentrates on accuracy, which may be less inspiring
   but can be very helpful at times as well. His edition is also annotated
-  with explanations and notes which I personally found to be a mix of useful and
-  obvious. [His translation is also available online](http://www.taoism.net/ttc).
+  with explanations and notes which I personally found to be a mix of somtimes
+  useful and sometimes obvious.  
+  [His translation is also available online](http://www.taoism.net/ttc).
 * Stephen Mitchell's edition is probably the easiest to understand.
   He aims to convey the wit and elegance of the original poetry.
   He does take a lot of liberties though — replacing entire phrases

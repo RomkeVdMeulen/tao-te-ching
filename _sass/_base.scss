@@ -142,6 +142,17 @@ img {
     vertical-align: middle;
 }
 
+img.left {
+    float: left;
+    max-width: 30%;
+    margin: 0.4em $spacing-unit 0 0;
+
+    @include media-query($on-palm) {
+        float: none;
+        max-width: 100%;
+        margin: 0 0 $spacing-unit 0;
+    }
+}
 
 
 /**
@@ -293,6 +304,9 @@ pre {
     }
 }
 
+.clear {
+  @extend %clearfix;
+}
 
 
 /**
