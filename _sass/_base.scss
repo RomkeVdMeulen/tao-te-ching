@@ -53,6 +53,9 @@ article {
     }
 
     > .entry-content {
+        @extend %clearfix;
+        min-height: 121px;
+
         @include media-query($on-palm) {
             font-size: 80%;
         }
@@ -90,12 +93,18 @@ article {
     text-align: center;
 
     > div {
-        color: $grey-color;
-        font-size: $base-font-size;
-        font-style: italic;
 
-        @include media-query($on-palm) {
-            font-size: $small-font-size;
+        > div {
+            display: inline-block;
+            vertical-align: middle;
+            color: $grey-color;
+            font-size: $base-font-size;
+            font-style: italic;
+            line-height: 1.5;
+
+            @include media-query($on-palm) {
+                font-size: $small-font-size;
+            }
         }
 
         &:before {
